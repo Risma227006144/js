@@ -34,6 +34,7 @@ body {
 
 .navbar-logo {
     font-size: 24px;
+     font-family: 'Times New Roman', Times, serif;
 }
 
 .navbar-links {
@@ -63,9 +64,9 @@ body {
 
 @media screen and (max-width: 768px) {
     .navbar {
-        flex-direction: row-reverse; /* Membalikkan arah flexbox */
-        justify-content: space-between; /* Mengatur jarak antara elemen */
-        align-items: left;
+        flex-direction: row-reverse; 
+        justify-content: space-between;
+        align-items: right;
     }
     .navbar-links {
         display: none;
@@ -77,9 +78,12 @@ body {
         left: 0; /* Mengubah posisi ke kanan */
         width: 100%;
         z-index: 1;
+        align-items: left;
     }
     .navbar-links.active {
         display: flex;
+        height: 50vh; 
+        overflow-y: auto; 
     }
     .navbar-toggle {
         display: block;

@@ -62,14 +62,19 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: row-reverse; /* Membalikkan arah flexbox */
+        justify-content: space-between; /* Mengatur jarak antara elemen */
+        align-items: center;
+    }
     .navbar-links {
         display: none;
         flex-direction: column;
-        background-color: #333;
+        background-color: #161616;
         padding: 10px;
         position: absolute;
         top: 60px;
-        left: 0;
+        right: 0; /* Mengubah posisi ke kanan */
         width: 100%;
         z-index: 1;
     }
@@ -80,6 +85,7 @@ body {
         display: block;
     }
 }
+
 
 nav a {
     color: #f2f2f2;

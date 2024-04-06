@@ -65,7 +65,7 @@ body {
     .navbar {
         flex-direction: row-reverse; /* Membalikkan arah flexbox */
         justify-content: space-between; /* Mengatur jarak antara elemen */
-        align-items: center;
+        align-items: left;
     }
     .navbar-links {
         display: none;
@@ -74,7 +74,7 @@ body {
         padding: 10px;
         position: absolute;
         top: 60px;
-        right: 0; /* Mengubah posisi ke kanan */
+        left: 0; /* Mengubah posisi ke kanan */
         width: 100%;
         z-index: 1;
     }

@@ -1,5 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('.menu-toggle').addEventListener('click', function() {
-        document.querySelector('.nav-links').classList.toggle('active');
+    const navbarToggle = document.querySelector('.navbar-toggle');
+    const navbarLinks = document.querySelector('.navbar-links');
+
+    navbarToggle.addEventListener('click', function() {
+        navbarLinks.classList.toggle('active');
     });
 });

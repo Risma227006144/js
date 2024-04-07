@@ -66,28 +66,35 @@ body {
     .navbar {
         flex-direction: row-reverse; 
         justify-content: space-between;
+        padding: 10px;
         align-items: right;
     }
     .navbar-links {
         display: none;
         flex-direction: column;
-        background-color: #161616;
+        background-color: #d3d3d3;
+        color: #161616;
         padding: 10px;
         position: absolute;
         top: 60px;
         left: 0; /* Mengubah posisi ke kanan */
-        width: 100%;
-        z-index: 1;
-        align-items: left;
+        width: 50%;
+       z-index: 1;
+        align-items: flex-end;
     }
     .navbar-links.active {
         display: flex;
-        height: 50vh; 
+        height: auto;
+        width:50%;
         overflow-y: auto; 
     }
     .navbar-toggle {
         display: block;
     }
+    .navbar-logo {
+    font-size: 24px;
+     font-family: 'Times New Roman', Times, serif;
+}
 }
 
 

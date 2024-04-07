@@ -67,12 +67,11 @@ body {
         flex-direction: row-reverse; 
         justify-content: space-between;
         padding: 10px;
-        align-items: right;
+        align-items: Left;
     }
     .navbar-links {
         display: none;
         flex-direction: column;
-        background-color: #d3d3d3;
         color: #161616;
         padding: 10px;
         position: absolute;
@@ -84,7 +83,7 @@ body {
     }
     .navbar-links.active {
         display: flex;
-        height: auto;
+        height: 100%;
         width:50%;
         overflow-y: auto; 
     }
